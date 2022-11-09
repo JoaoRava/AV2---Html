@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV2 - Exercicio 4</title>
+</head>
+<body>
+    <Script>
+        let nomeUsuario = prompt("Digite seu nome completo como no cartão; ");
+        let nomeBanco = prompt("Digite do seu banco; ");
+        let numeroContaCorrente = prompt("Digite o numero da sua conta corrente; ");
+        let valorChequesDeb = prompt("Digite o valor total de cheques a debitar; ");
+        let valorDinCheCred = prompt("Digite o valor total de dinheiro e cheques a creditar; ");
+        let limiteCredito = prompt("Digite o seu limite de credito; ");
+        let saldoAtual = prompt("Digite o seu saldo atual; ");
+
+        saldoDisponivel = ((Number(saldoAtual) + Number(valorDinCheCred) + Number(limiteCredito)) - Number(valorChequesDeb));
+
+        window.document.write("Nome: " + nomeUsuario + "</br>");
+        window.document.write("Banco: " + nomeBanco + "</br>");
+        window.document.write("Conta C/c: " + numeroContaCorrente + "</br>");
+        window.document.write("Saldo disponivel: " + saldoDisponivel + "</br>");
+
+
+
+    </Script>
+</body>
+</html>

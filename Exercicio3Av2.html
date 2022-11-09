@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV2 - Exercicio 3</title>
+</head>
+<body>
+    <script>
+        let nomeLoja = prompt("Digite o nome da sua Loja; ");
+        let vendas12meses = prompt("Digite o total de vendas mensais de 12 meses atras; ");
+        let vendas11meses = prompt("Digite o total de vendas mensais de 11 meses atras; ");
+        let vendas10meses = prompt("Digite o total de vendas mensais de 10 meses atras; ");
+        let vendas9meses = prompt("Digite o total de vendas mensais de 9 meses atras; ");
+        let vendas8meses = prompt("Digite o total de vendas mensais de 8 meses atras; ");
+        let vendas7meses = prompt("Digite o total de vendas mensais de 7 meses atras; ");
+        let vendas6meses = prompt("Digite o total de vendas mensais de 6 meses atras; ");
+        let vendas5meses = prompt("Digite o total de vendas mensais de 5 meses atras; ");
+        let vendas4meses = prompt("Digite o total de vendas mensais de 4 meses atras; ");
+        let vendas3meses = prompt("Digite o total de vendas mensais de 3 meses atras; ");
+        let vendas2meses = prompt("Digite o total de vendas mensais de 2 meses atras; ");
+        let vendas1meses = prompt("Digite o total de vendas mensais de 1 meses atras; ");
+
+        total1_semestre = Number(vendas12meses) + Number(vendas11meses) + Number(vendas10meses) + Number(vendas9meses) + Number(vendas8meses) + Number(vendas7meses);
+        total2_semestre = Number(vendas6meses) + Number(vendas5meses) + Number(vendas4meses) + Number(vendas3meses) + Number(vendas2meses) + Number(vendas1meses);
+
+        window.document.write("Loja " + nomeLoja + " o valor total de vendas no primeiro semestre é de: " + total1_semestre + "</br>");
+        window.document.write("Ja no segundo semestre o valor total de vendas é: " + total2_semestre);
+
+
+    </script>
+    
+</body>
+</html>

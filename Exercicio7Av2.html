@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV2 - Exercicio 7</title>
+</head>
+<body>
+    <script>
+        let nomeProduto = prompt("Digite o nome de um produto; ");
+        let custoFabrica = prompt("Digite o custo de fabrica; ");
+        let taxaImpostosGov = prompt("Digite o valor em porcentagem da taxa de impostos governamentais; ");
+        let taxaImpostosFab = prompt("Digite o valor em porcentagem da taxa de impostos do fabricante; ");
+
+        totalImpostos = ((Number(taxaImpostosGov)/100)+(Number(taxaImpostosFab)/100));
+        precoImpostos = Number(custoFabrica) * totalImpostos;
+        precoFinal = precoImpostos + Number(custoFabrica);
+
+        window.document.write("Nome produto: " + nomeProduto + "</br>");
+        window.document.write("Preço final para o consumidor: " + precoFinal);
+
+
+
+    </script>
+</body>
+</html>

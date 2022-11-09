@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV2 - Exercicio 5</title>
+</head>
+<body>
+    <script>
+        hotDog = 1.00;
+        hamburguer = 1.30;
+        cheeseBurguer = 1.50;
+        refrigerante = 1.00;
+        batataFrita = 0.80;
+
+        let nomeCliente = prompt("Digite seu nome para colocarmos no pedido; ");
+        let quantidadeHotDog = prompt("Digite quantos HotDogs você deseja; ");
+        let quantidadeHamburguer = prompt("Digite quantos Hamburguers você deseja; ");
+        let quantidadeCheeseBurguer = prompt("Digite quantos CheeseBurguers você deseja; ");
+        let quantidadeRefrigerante = prompt("Digite quantos Refrigerante você deseja; ");
+        let quantidadeBatataFrita = prompt("Digite quantas Batatas Fritas você deseja; ");
+
+        valorHotDog = Number(quantidadeHotDog) * Number(hotDog);
+        valorHamburguer = Number(quantidadeHamburguer) * Number(hamburguer);
+        valorCheeseBurguer = Number(quantidadeCheeseBurguer) * Number(cheeseBurguer);
+        valorRefrigerante = Number(quantidadeRefrigerante) * Number(refrigerante);
+        valorBatataFrita = Number(quantidadeBatataFrita) * Number(batataFrita);
+        totalPedido = valorHotDog + valorHamburguer + valorCheeseBurguer + valorRefrigerante + valorBatataFrita;
+
+        window.document.write("Nome: " + nomeCliente + "</br>");
+        window.document.write("Total da compra: " + totalPedido);
+    </script>
+</body>
+</html>
